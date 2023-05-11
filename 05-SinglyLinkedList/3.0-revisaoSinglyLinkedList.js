@@ -50,7 +50,7 @@ class SinglyLinkedList{
           console.log(current.val);
           current = current.next;
         }
-        return this.length
+        return 
       }
 
     // Pop consists in a function that remove the value of the tail
@@ -197,7 +197,7 @@ class SinglyLinkedList{
     // So we should a node before the index passed in function, sext its next node to be
     // the next of its next
 
-    //     If the index is less than zero or greater than the length, return undefined
+    // If the index is less than zero or greater than the length, return undefined
     // If the index is the same as the length-1, pop
     // If the index is 0, shift
     // Otherwise, using the get method, access the node at the index - 1
@@ -216,18 +216,49 @@ class SinglyLinkedList{
         return nodeToBeRemove.val
     }
 
+    // Swap the head and tail
+    // Create a variable called next
+    // Create a variable called prev
+    // Create a variable called node and initialize it to the head property
+    // Loop through the list
+    // Set next to be the next property on whatever node is
+    // Set the next property on the node to be whatever prev is
+    // Set prev to be the value of the node variable
+    // Set the node variable to be the value of the next variable
+    // Once you have finished looping, return the list
+
     reverse(){
-        
+        // Change head and tail position
+        var current = this.head
+        this.head = this.tail 
+        this.tail = current
+        var next;
+        var prev = null;
+        for(let i = 0; i < this.length; i++){
+            next = current.next
+            current.next = prev
+            prev = current
+            current = next
+        }
+        //          current
+        // prev             next
+        // 1    ->   2   ->  3
+        return this
     }
 }
 
+
 var list = new SinglyLinkedList()
-list.push("Ola")
-list.push("Mundo")
-list.push("!")
+list.push(1)
+list.push(2)
+list.push(3)
 // console.log(list.unshift("Oi oi"))
 // console.log(list.set(0, "Hello"))
 // console.log(list.set(1, "World"))
-list.insert(1, ",")
-list.remove(1)
+// list.insert(1, ",")
+// // list.remove(1)
+console.log("Before reverse")
+console.log(list.traverse())
+console.log("After reverse")
+list.reverse()
 console.log(list.traverse())
