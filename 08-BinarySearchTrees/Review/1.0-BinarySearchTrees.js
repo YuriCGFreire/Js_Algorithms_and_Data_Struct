@@ -79,7 +79,7 @@ class BinarySearchTree {
   //  Return the variable that stores the values
   breadthFirstSearch() {
     const queue = []
-    const visited = []
+    const visited = [] 
     queue.push(this.root)
     while(queue.length){
         var currentNode = queue.shift()
@@ -139,4 +139,4 @@ binaryTree.insert(62);
 binaryTree.insert(3);
 binaryTree.insert(11);
 binaryTree.insert(72);
-console.log(binaryTree.depthFirstSearchInOrder());
+console.log(binaryTree.breadthFirstSearch());

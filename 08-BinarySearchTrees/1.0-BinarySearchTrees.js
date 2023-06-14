@@ -98,6 +98,7 @@ class BinarySearchTree {
     } else {
       this.recursionInsertNode(this.root, newNode);
     }
+    return "ok"
   }
 
   recursionInsertNode(currentNode, newNode) {
@@ -118,21 +119,21 @@ class BinarySearchTree {
 }
 
 var binaryTree = new BinarySearchTree();
-binaryTree.iterativeInsert(10);
-binaryTree.iterativeInsert(9);
-binaryTree.iterativeInsert(8);
-binaryTree.iterativeInsert(18);
-binaryTree.iterativeInsert(12);
-binaryTree.iterativeInsert(20);
-binaryTree.iterativeInsert(9.5);
-binaryTree.iterativeInsert(19);
-binaryTree.iterativeInsert(21);
+// binaryTree.iterativeInsert(10);
+// binaryTree.iterativeInsert(9);
+// binaryTree.iterativeInsert(8);
+// binaryTree.iterativeInsert(18);
+// binaryTree.iterativeInsert(12);
+// binaryTree.iterativeInsert(20);
+// binaryTree.iterativeInsert(9.5);
+// binaryTree.iterativeInsert(19);
+// binaryTree.iterativeInsert(21);
 
-// binaryTree.recursionInsert(10)
-// binaryTree.recursionInsert(9)
-// binaryTree.recursionInsert(8)
-// binaryTree.recursionInsert(18)
-// binaryTree.recursionInsert(12)
-// binaryTree.recursionInsert(20)
-// binaryTree.recursionInsert(9.5)
-console.log(binaryTree.iterativeFind(null));
+binaryTree.recursionInsert(10)
+binaryTree.recursionInsert(9)
+binaryTree.recursionInsert(8)
+binaryTree.recursionInsert(18)
+binaryTree.recursionInsert(12)
+binaryTree.recursionInsert(20)
+binaryTree.recursionInsert(9.5)
+console.log(binaryTree.recursionInsert(11));
