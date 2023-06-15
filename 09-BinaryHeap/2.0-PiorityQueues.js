@@ -118,5 +118,6 @@ priorityQueue.enqueue("Enviar CV", 1);
 priorityQueue.enqueue("Tomar banho", 2);
 priorityQueue.enqueue("Assistir TV", 3);
 
-console.log(priorityQueue.dequeue())
+priorityQueue.dequeue()
+priorityQueue.dequeue()
 console.log(priorityQueue);

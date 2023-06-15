@@ -83,7 +83,7 @@ class BinarySearchTree {
     return visited;
   }
   // [5, 2, 1, 3, 7, 6, 8]
-  //         5
+  //   ->    5
   //     2       7
   //   1  3    6   8
 
@@ -99,7 +99,7 @@ class BinarySearchTree {
     return visited;
   }
 
-  // [1, 3, 2, 6, 8, 7, 52]
+  // [1, 3, 2, 6, 8, 7, 5]
   //         5
   //     2       7
   //   1  3    6   8
