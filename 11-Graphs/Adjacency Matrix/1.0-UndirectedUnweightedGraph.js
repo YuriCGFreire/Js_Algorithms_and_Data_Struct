@@ -92,14 +92,6 @@ class Graph {
     return result;
   }
 
-  recursiveBFS(vertex) {
-    const visitedVerticesArray = new Array(this.vertices).fill(false);
-    const result = [];
-    const adj = this.adjacencyMatrix;
-    const vertices = this.vertices;
-
-  }
-
   breadthFirstTraversal(vertex) {
     const visitedVerticesArray = new Array(this.vertices).fill(false);
     const result = [];
