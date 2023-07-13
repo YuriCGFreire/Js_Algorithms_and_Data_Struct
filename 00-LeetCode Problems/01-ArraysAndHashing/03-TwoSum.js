@@ -34,7 +34,7 @@ var twoSum = function (nums, target) {
     }
   }
 };
-// Others solution
+// Others solution (Big O(n))
 var twoSum2 = function (nums, target) {
     const hashMap = {}
     for(let i = 0; i < nums.length; i++){
@@ -48,7 +48,7 @@ var twoSum2 = function (nums, target) {
 };
 
 console.log(twoSum2([7, 2, 11, 15], 9));
-console.log(twoSum2([2, 1, 5, 3], 4));
-console.log(twoSum2([3, 2, 4], 6));
-console.log(twoSum2([3, 3], 6));
-console.log(twoSum2([2, 5, 5, 11], 10));
+// console.log(twoSum2([2, 1, 5, 3], 4));
+// console.log(twoSum2([3, 2, 4], 6));
+// console.log(twoSum2([3, 3], 6));
+// console.log(twoSum2([2, 5, 5, 11], 10));
