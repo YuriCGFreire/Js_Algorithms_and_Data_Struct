@@ -20,8 +20,6 @@ function findLongestSubstring(string){
     let longestsubstring = -Infinity;
     while(left < string.length){
         if(!(string[right] in frequencyCounter) && right < string.length){
-            console.log(longestsubstring)
-            console.log(frequencyCounter)
             frequencyCounter[string[right]] = (frequencyCounter[string[right]] || 0) + 1
             right++
         }else if(string[left] in frequencyCounter){
@@ -74,10 +72,10 @@ function findLongestSubstring(string){
 //     return Math.max(max, start - end)
 // }
 
-// console.log(findLongestSubstring('')) // 0
-// console.log(findLongestSubstring('rithmschool')) // 7
-// console.log(findLongestSubstring('thisisawesome')) // 6
-// console.log(findLongestSubstring('thecatinthehat')) // 7
+console.log(findLongestSubstring('')) // 0
+console.log(findLongestSubstring('rithmschool')) // 7
+console.log(findLongestSubstring('thisisawesome')) // 6
+console.log(findLongestSubstring('thecatinthehat')) // 7
 console.log(findLongestSubstring('bbbbbb')) // 1
-// console.log(findLongestSubstring('longestsubstring')) // 8
-// console.log(findLongestSubstring('thisishowwedoit')) // 6
+console.log(findLongestSubstring('longestsubstring')) // 8
+console.log(findLongestSubstring('thisishowwedoit')) // 6
