@@ -25,7 +25,9 @@ var numIdenticalPairs = function (nums) {
     } else {
       pairs[num] = 1;
     }
+    console.log(pairs[num])
   }
+  console.log(pairs)
   return count;
 };
 

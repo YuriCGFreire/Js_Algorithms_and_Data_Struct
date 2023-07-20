@@ -38,9 +38,9 @@ var smallerNumbersThanCurrent = function (nums) {
 
 
 const nums1 = [8, 1, 2, 2, 3];
-const nums2 = [6, 5, 4, 8];
-const nums3 = [7,7,7,7];
+// const nums2 = [6, 5, 4, 8];
+// const nums3 = [7,7,7,7];
 
 console.log(smallerNumbersThanCurrent(nums1));
-console.log(smallerNumbersThanCurrent(nums2));
-console.log(smallerNumbersThanCurrent(nums3));
+// console.log(smallerNumbersThanCurrent(nums2));
+// console.log(smallerNumbersThanCurrent(nums3));
