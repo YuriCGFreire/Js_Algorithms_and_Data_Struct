@@ -26,6 +26,7 @@ var groupAnagrams = function(strs) {
             hashMap[sortedString].push(lowerCaseStr)
         }
     })
+    console.log(hashMap)
     return Object.values(hashMap)
 };
 
@@ -34,5 +35,5 @@ const strs = ["Eat","tea","tan","ate","nat","bat"]
 const strs1 = ["Eat"]
 const strs2 = [""]
 console.log(groupAnagrams(strs))
-console.log(groupAnagrams(strs1))
-console.log(groupAnagrams(strs2))
+// console.log(groupAnagrams(strs1))
+// console.log(groupAnagrams(strs2))

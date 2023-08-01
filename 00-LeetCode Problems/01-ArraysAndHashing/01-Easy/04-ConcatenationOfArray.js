@@ -34,11 +34,14 @@ var getConcatenation2 = function(nums){
     return ans
 }
 
+
+
 const nums1 = [1,3,2,1]
 const nums2 = [1,2,1]
+
 
 // console.log(getConcatenation(nums1))
 // console.log(getConcatenation(nums2))
 console.log(getConcatenation2(nums1))
-console.log(getConcatenation2(nums2))
+// console.log(getConcatenation2(nums2))
 

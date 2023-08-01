@@ -30,6 +30,4 @@ var containsDuplicate = function(nums) {
 const nums = [1,1,1,3,3,4,3,2,4,2]
 const nums2 = [1,2,3,4]
 console.log(containsDuplicate(nums))
-
-// Others solution
-
+console.log(containsDuplicate(nums2))

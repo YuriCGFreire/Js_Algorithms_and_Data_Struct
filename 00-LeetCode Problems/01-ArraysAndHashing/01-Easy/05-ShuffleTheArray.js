@@ -32,7 +32,6 @@ var shuffle = function (nums, n) {
   }
   return ans;
 };
-
 const nums1 = [1, 1, 2, 2];
 const nums2 = [2, 5, 1, 3, 4, 7];
 const nums3 = [1, 2, 3, 4, 4, 3, 2, 1];

@@ -14,8 +14,8 @@ var isValidSudoku = function (board) {
     let col = new Set()
     let box = new Set()
     for(let j = 0; j < 9; j++){
-      let _row = board[i][j]
-      let _col = board[j][i]
+      let _row = board[i][j] 
+      let _col = board[j][i] 
       let _box = board[3 * Math.floor(i/3) + Math.floor(j/3)][3*(i%3)+(j%3)]
       if(_row != "."){
         if(row.has(_row)) return false
@@ -45,7 +45,7 @@ let sudoku1 = [
   [".", ".", ".", "4", "1", "9", ".", ".", "5"],
   [".", ".", ".", ".", "8", ".", ".", "7", "9"],
 ];
-
+[3 * Math.floor(i/3) + Math.floor(j/3)][3*(i%3)+(j%3)]
 let sudoku2 = [
   ["8", "8", ".", ".", "7", ".", ".", ".", "."],
   ["6", ".", ".", "1", "9", "5", ".", ".", "."],
